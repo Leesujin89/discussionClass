@@ -1,0 +1,15 @@
+<Context path="/project" docBase="www">
+<Resource
+		name="jdbc/DiscussionClass"
+		auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="com.mysql.cj.jdbc.Driver"
+		loginTimeout="10"
+		validationQuery="SELECT 1 FROM DUAL"
+		maxWait="5000"
+		username="root"
+		password="12345"
+		testOnBorrow="true"
+		url="jdbc:mysql://localhost:3306/DiscussionClass?serverTimezone=UTC"/>
+<ResourceLink type="javax.sql.data.DataSource" name="jdbc/DiscussionClass" global="jdbc/DiscussionClass"/>		
+</Context>
